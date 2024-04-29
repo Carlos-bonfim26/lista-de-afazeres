@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(200deg, #e22865, #b325ff);
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+}
+.container{
+  
+    padding:0.5rem;
+   margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+.nav h2{
+    font-size: 2rem;
+}
+.user-input{
+    display: flex;
+    width: 21.8rem;
+    text-align: center;
+}
+.user-input input{
+    background-color: white;
+    width: 80%;
+   outline: none;
+   padding: 8px;
+   border: 1px solid lightgray;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition:all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+.user-input button:hover{
+    background-color: transparent;
+    color: white;
+}
+.to-do-items{
+    width: 31.25rem;
+    margin: auto;
+}
+.item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 1rem;
+    color: #454545;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.item:hover{
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865;
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media screen and (max-width:450px) {
+   .nav{
+    margin: 5px 2px;
+    width: 100%;
+    padding: 0.3rem;
+   }
+    .nav h2{
+        font-size: 1.5rem;
+    }
+    .user-input, .to-do-items{
+        width: 100%;
+    }
+    .user-input input, .item{
+        width: 70%;
+        padding: 5px;
+    }
+    .user-input button{
+        padding: 5px;
+    }
+}
